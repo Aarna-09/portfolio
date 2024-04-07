@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1579546928686-286c9fbde1ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbGlkJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+            background-repeat: no-repeat; 
+            background-size: cover; 
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .image-container img {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+        .image-container:hover img {
+            border-color: blue;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose a Design</h1>
+        <div class="image-container">
+           
+                <p>Design 1</p>
+                <a href="{{ url_for('create') }}"><img src="https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-of-the-front-end-developer-Olaolu-Olawuyi-1024x473.png" alt="Design 1"></a>
+            
+                 </div>
+        <div class="image-container">
+            <p>Design 2</p>
+            <a href="{{ url_for('create') }}"><img src="https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-of-the-front-end-developer-Olaolu-Olawuyi-1024x473.png" alt="Design 2"></a>
+        </div>
+        <div class="image-container">
+            <p>Design 3</p>
+            <a href="{{ url_for('create') }}"><img src="https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-of-the-front-end-developer-Olaolu-Olawuyi-1024x473.png" alt="Design 3"></a>
+        </div>
+        <div class="image-container">
+            <p>Design 4</p>
+            <a href="{{ url_for('create') }}"><img src="https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2022/06/Portfolio-of-the-front-end-developer-Olaolu-Olawuyi-1024x473.png" alt="Design 4"></a>
+        </div>
+    </div>
+</body>
+</html>

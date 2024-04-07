@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1579546928686-286c9fbde1ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbGlkJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+            background-repeat: no-repeat; 
+            background-size: cover; 
+        }
+        header {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CREATE YOUR PORTFOLIO</h1>
+            <div class="input-group">
+                <a href="{{ url_for('design') }}" class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">START</a>
+
+            </div>
+        </div>
+    </header>
+</body>
+</html>
